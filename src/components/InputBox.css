@@ -1,0 +1,83 @@
+.input-box-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  right: 24px;
+  padding: 0;
+  background: transparent;
+  pointer-events: none;
+  transition: all 0.2s ease;
+  z-index: 40;
+}
+
+.input-box-container.with-sidebar {
+  left: 316px;
+}
+
+.input-form {
+  max-width: 900px;
+  margin: 0 auto;
+  display: flex;
+  gap: 12px;
+  align-items: flex-end;
+  pointer-events: auto;
+  background: rgba(42, 42, 42, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 18px 24px;
+  border-radius: 12px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.input-form textarea {
+  flex: 1;
+  background: transparent;
+  border: none;
+  padding: 8px 0;
+  color: #e8e8e8;
+  font-size: 15px;
+  font-family: inherit;
+  resize: none;
+  max-height: 200px;
+  min-height: 24px;
+  line-height: 1.5;
+}
+
+.input-form textarea::placeholder {
+  color: #666;
+}
+
+.input-form textarea:focus {
+  outline: none;
+}
+
+.input-form textarea:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.send-btn {
+  width: 44px;
+  height: 44px;
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  border-radius: 8px;
+  color: #e8e8e8;
+  cursor: pointer;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.15s ease;
+}
+
+.send-btn:hover:not(:disabled) {
+  background: rgba(255, 255, 255, 0.15);
+}
+
+.send-btn:disabled {
+  background: rgba(255, 255, 255, 0.05);
+  border-color: rgba(255, 255, 255, 0.05);
+  color: #666;
+  cursor: not-allowed;
+  opacity: 0.5;
+}

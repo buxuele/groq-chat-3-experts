@@ -1,0 +1,30 @@
+.message-list {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.message-group {
+  margin-bottom: 32px;
+}
+
+.user-message {
+  background: rgba(42, 42, 42, 0.95);
+  backdrop-filter: blur(20px);
+  padding: 20px 28px;
+  border-radius: 12px;
+  margin-bottom: 20px;
+  border: 1px solid rgba(255, 255, 255, 0.08);
+}
+
+.message-content {
+  font-size: 15px;
+  line-height: 1.7;
+  color: #e8e8e8;
+  font-weight: 400;
+}
+
+.expert-responses {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+}
