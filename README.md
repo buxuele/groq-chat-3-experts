@@ -1,5 +1,8 @@
 # AI 智囊团
 
+### https://groq-chat-3-experts.vercel.app/
+
+
 从三位专家视角获取洞察：历史专家、硅谷创业导师、行为心理学专家。
 
 ## 特色功能
@@ -7,8 +10,17 @@
 - 三位 AI 专家同时分析你的问题
 - 对话历史本地存储
 - Markdown 和代码高亮支持
-- ChatGPT 风格简洁 UI
+- 玻璃拟态 UI 设计（透明毛玻璃效果）
+- 可爱背景图片
 - 纯前端应用，无需后端
+
+## UI 特性
+
+- 玻璃拟态设计风格（Glassmorphism）
+- 半透明毛玻璃卡片效果
+- 背景图片 + 渐变叠加
+- 响应式布局，支持移动端
+- 深色主题优化
 
 ## 本地开发
 
@@ -65,7 +77,8 @@ npm run build
 
 - React 19
 - Vite
+- Tailwind CSS
 - Groq API
 - React Markdown
 - LocalStorage
-# groq-chat-3-experts
+- Lucide React Icons

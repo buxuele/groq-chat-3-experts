@@ -42,6 +42,7 @@ export function createConversation(question, responses) {
     id: crypto.randomUUID(),
     timestamp: new Date().toISOString(),
     messages: [{
+      id: crypto.randomUUID(),
       question,
       responses,
       timestamp: new Date().toISOString()
@@ -56,6 +57,7 @@ export function appendToConversation(conversation, question, responses) {
     messages: [
       ...conversation.messages,
       {
+        id: crypto.randomUUID(),
         question,
         responses,
         timestamp: new Date().toISOString()
